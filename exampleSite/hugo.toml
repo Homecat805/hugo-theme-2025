@@ -1,0 +1,23 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'Walden'
+
+theme = 'hugo-theme-2025'
+copyright = 'All rights reserved'
+
+[params]
+  author = 'Homecat'
+
+[menus]
+  [[menus.main]]
+    name = 'Home'
+    identifier = "home"
+    pageRef = '/'
+    pre = '<i class="bi bi-house-fill"></i>'
+    weight = 10
+  [[menus.main]]
+    name = 'Blog'
+    identifier = "blog"
+    pageRef = '/blog'
+    pre = '<i class="bi bi-file-post"></i>'
+    weight = 20
