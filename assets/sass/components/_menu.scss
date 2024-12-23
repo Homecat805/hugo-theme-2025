@@ -1,0 +1,26 @@
+.menu {
+    font-size: .875rem;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    .menu-item {
+        a {
+            display: block;
+            margin: .25rem 0;
+
+
+            color: var(--slate-600);
+            &:hover {
+                color: var(--orange);
+            }
+            i {
+
+                margin-right: .5rem;
+            }
+        }
+        .active {
+            color: var(--orange);
+        }
+    }
+}
+

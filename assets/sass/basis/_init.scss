@@ -1,0 +1,23 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    cursor: pointer;
+    transition: .5s;
+    text-decoration: none;
+    color: var(--slate-600);
+    &:hover {
+        color: var(--orange);
+    }
+}
+
+img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+}

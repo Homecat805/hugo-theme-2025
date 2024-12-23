@@ -1,8 +1,11 @@
-{{ define "main" }}
-  <h1>{{ .Title }}</h1>
-  {{ .Content }}
-  {{ range .Pages }}
-    <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
-    {{ .Summary }}
-  {{ end }}
+{{ define "necker" }}
+<div id="breadcrumb">
+    {{ partial "stager/breadcrumb.html" . }}
+</div>
+{{ end }}
+
+{{ define "stager" }}
+<main></main>
+<aside></aside>
+
 {{ end }}

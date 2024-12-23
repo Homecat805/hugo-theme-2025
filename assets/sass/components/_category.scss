@@ -1,0 +1,35 @@
+.category {
+    font-size: .875rem;
+
+    h4 {
+        margin-bottom: .5rem;
+    }
+
+    a {
+        padding: .375rem 0;
+        border-radius: .25rem;
+
+        
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+
+        .dashed-line {
+            flex: 1;
+            border-bottom: 1px dashed var(--slate-600);
+            margin: 0 1rem;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &:hover {
+            .dashed-line {
+                border-bottom: 1px dashed var(--orange);
+            }
+        }
+    }
+}
