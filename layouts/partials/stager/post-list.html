@@ -1,0 +1,14 @@
+{{ range .Paginator.Pages }}
+<section class="post-list-item">
+
+    <div class="item-title"><a href="{{.Permalink}}"><b>{{ .Title }}</b></a></div>
+    <div class="item-brief">{{ .Summary }}</div>
+
+    <div class="item-meta">
+        <p>
+            <span><i class="bi bi-calendar3"></i>{{.Date.Format "Jan 2, 2006"}}</span>
+            <span><i class="bi bi-person-square"></i>{{ .Params.author }}</span>
+        </p>
+    </div>
+</section>
+{{ end }}

@@ -5,7 +5,21 @@
 {{ end }}
 
 {{ define "stager" }}
-<main></main>
-<aside></aside>
-
+<main>
+    <div class="container">
+        <div id="post-list">
+            {{ partial "stager/post-list.html" . }}
+        </div>
+    </div>
+</main>
+<aside>
+    <div class="container">
+        <div id="list-category">
+            {{ partial "stager/list-category.html" . }}
+        </div>
+        <div id="list-tag">
+            {{ partial "stager/list-tag.html" . }}
+        </div>
+    </div>
+</aside>
 {{ end }}

@@ -1,0 +1,12 @@
+{{ with .Site.Taxonomies.categories }}
+<div class="category">
+    <h4>Category</h4>
+    {{ range . }}
+    <a class="item-link" href="{{.Page.Permalink}}">
+        <span>{{.Page.Title}}</span>
+        <span class="dashed-line"></span>
+        <span>{{.Count}}</span>
+    </a>
+    {{ end }}
+</div>
+{{ end }}

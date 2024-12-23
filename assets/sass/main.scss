@@ -6,7 +6,7 @@
 @import "./layouts/baseof";
 @import "./layouts/header";
 @import "./layouts/necker";
-// @import "./layouts/stager";
+@import "./layouts/stager";
 @import "./layouts/footer";
 
 
@@ -14,9 +14,9 @@
 @import "./components/menu";
 @import "./components/copyright";
 @import "./components/breadcrumb";
-// @import "./components/category";
-// @import "./components/tag";
-// @import "./components/post-list";
+@import "./components/category";
+@import "./components/tag";
+@import "./components/post-list";
 // @import "./components/post-content";
 // @import "./components/markdown";
 // @import "./components/readmore";

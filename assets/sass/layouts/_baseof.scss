@@ -30,6 +30,18 @@ body {
 
 #stager {
     flex: 1;
+    main {
+        .container {
+            margin: 0 1rem;
+        }
+    }
+    aside {
+        .container {
+            margin: 2rem 1rem;
+            padding: 1rem;
+            background-color: var(--slate-050);
+        }
+    }
 }
 
 #footer {
@@ -52,6 +64,17 @@ body {
     
     #stager {
         margin-left: 240px;
+        main {
+            .container {
+                margin: 0 2rem;
+            }
+        }
+        aside {
+            .container {
+                margin: 0 2rem;
+            }
+        }
+
     }
     
     #footer {
@@ -68,9 +91,16 @@ body {
         justify-content: flex-start;
         main {
             flex: 1;
+            .container {
+                margin: 0 1rem 0 2rem;
+            }
         }
         aside {
-            width: 250px;
+            width: 300px;
+            .container {
+                margin: 0 2rem 0 1rem;
+            }
+
         }
     }
 }
@@ -78,7 +108,15 @@ body {
 @media (min-width: $xxl) {
     #stager {
         aside {
-            width: 300px;
+            width: 350px;
+        }
+    }
+}
+
+@media (min-width: $xxxl) {
+    #stager {
+        aside {
+            width: 400px;
         }
     }
 }
