@@ -1,1 +1,7 @@
-# hugo-theme-2025
+# Theme Name
+
+## Features
+
+## Installation
+
+## Configuration
