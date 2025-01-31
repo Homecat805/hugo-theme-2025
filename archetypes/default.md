@@ -1,10 +1,12 @@
 +++
+draft = false
 title = '{{ replace .File.ContentBaseName "-" " " | title }}'
 date = {{ .Date }}
-draft = false
-author = 'Homecat'
+weight = 1
 categories = ''
-tags = ['','']
+tags = ['']
+[params]
+  author = 'Homecat'
 +++
 
 <!--more-->

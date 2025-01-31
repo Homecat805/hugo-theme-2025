@@ -1,16 +1,22 @@
-<div id="title">
-    <span class="title">{{.Site.Title}}</span>
-    <span class="sider-toggle">
-        <a class="open"><i class="bi bi-list"></i></a>
-        <a class="close"><i class="bi bi-x"></i></a>
-    </span>
+<span class="logo">{{.Site.Title}}</span>
+
+<div class="nav">
+    <ul class="menu-main">
+        {{ $current := . }}
+        {{ range .Site.Menus.main }}
+            {{ $active := eq .Name $current.Title }}
+            {{ $active = or $active ( eq .Identifier $current.Section ) }}
+            <li class="menu-item">
+                <a class="{{ if $active }} active {{ end }}" href="{{ .URL }}">{{ .Name }}</a>
+            </li>
+        {{ end }}
+    </ul>
+    <ul class="menu-main">
+        <li class="menu-item">{{.Site.Params.author}}</li>
+    </ul>
 </div>
 
-
-<div id="sider">
-    <div class="container">
-        <div id="menu">
-            {{ partial "header/menu.html" . }}
-        </div>
-    </div>
-</div>
+<span class="toggle">
+    <a class="open"><i class="bi bi-list"></i></a>
+    <a class="close"><i class="bi bi-x"></i></a>
+</span>

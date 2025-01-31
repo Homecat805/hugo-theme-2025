@@ -1,0 +1,17 @@
+.menu-tree {
+    list-style: none;
+
+    a {
+        display: block;
+        margin-bottom: .5rem;
+    }
+
+    .active {
+        color: red;
+    }
+
+    .menu-tree {
+        display: none;
+        margin-left: 1rem;
+    }
+}

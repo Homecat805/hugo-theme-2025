@@ -1,7 +1,14 @@
-<div id="copyright">
-    <div class="copyright">
-        <span><i class="bi bi-c-circle"></i>{{ now.Year }}</span>
-        <span>{{ .Site.Params.author }}</span>
-        <span>{{ .Site.Copyright }}</span>
+<div class="copyright">
+    <span><i class="bi bi-c-circle"></i>{{ now.Year }}</span>
+    <span>{{ .Site.Params.author }}</span>
+    <span>{{ .Site.Copyright }}</span>
+</div>
+
+<div class="toggles">
+    <div class="tolist">
+        <a class="open"><i class="bi bi-layout-sidebar"></i></a>
+        <a class="close"><i class="bi bi-x"></i></a>
     </div>
+    <a href="#" class="totop"><i class="bi bi-chevron-up"></i></a>
+    <a href="#TableOfContents" class="totoc"><i class="bi bi-list-ul"></i></a>
 </div>

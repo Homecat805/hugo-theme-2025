@@ -1,25 +1,18 @@
-{{ define "necker" }}
-<div id="breadcrumb">
-    {{ partial "stager/breadcrumb.html" . }}
+{{ define "stager-aside" }}
+<div class="container">
+    <div class="container-inner">
+        {{ partial "stager/default-menu-tree.html" . }}
+    </div>
 </div>
 {{ end }}
 
-{{ define "stager" }}
-<main>
-    <div class="container">
-        <div id="post-list">
-            {{ partial "stager/post-list.html" . }}
-        </div>
+{{ define "stager-main" }}
+<div class="container">
+    <div class="container-inner">
+        {{ partial "stager/pub-breadcrumb.html" . }}
     </div>
-</main>
-<aside>
-    <div class="container">
-        <div id="list-category">
-            {{ partial "stager/list-category.html" . }}
-        </div>
-        <div id="list-tag">
-            {{ partial "stager/list-tag.html" . }}
-        </div>
+    <div class="container-inner">
+        {{ partial "stager/default-content.html" . }}
     </div>
-</aside>
+</div>
 {{ end }}

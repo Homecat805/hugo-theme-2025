@@ -1,0 +1,17 @@
+#TableOfContents {
+    background-color: var(--red-000);
+    padding: 1rem 1.5rem;
+
+    ul {
+        font-size: .875rem;
+        list-style: none;
+        li {
+            margin-bottom: .25rem;
+            ul {
+                margin-left: 1rem;
+                margin-top: .25rem;
+            }
+        }
+
+    }
+}

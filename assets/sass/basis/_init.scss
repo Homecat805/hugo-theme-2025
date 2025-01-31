@@ -10,9 +10,9 @@ a {
     cursor: pointer;
     transition: .5s;
     text-decoration: none;
-    color: var(--slate-600);
+    color: var(--slate-800);
     &:hover {
-        color: var(--orange);
+        color: var(--link);
     }
 }
 

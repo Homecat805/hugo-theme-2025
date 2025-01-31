@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ site.Language.LanguageCode }}">
+<html lang="{{ .Site.Language.LanguageCode }}" data-theme="{{.Site.Params.theme}}">
     <head>
         {{ partial "baseof/head.html" . }}
     </head>
@@ -7,12 +7,16 @@
         <header id="header">
             {{ partial "baseof/header.html" . }}
         </header>
-        <div id="necker">
-            {{ block "necker" . }}{{ end }}
-        </div>
+
         <div id="stager">
-            {{ block "stager" . }}{{ end }}
+            <aside>
+                {{ block "stager-aside" . }}{{ end }}
+            </aside>
+            <main>
+                {{ block "stager-main" . }}{{ end }}
+            </main>
         </div>
+
         <footer id="footer">
             {{ partial "baseof/footer.html" . }}
         </footer>

@@ -1,3 +1,58 @@
-#copyright {
-    padding: 1rem;
+#footer {
+    .copyright {
+        padding:1rem;
+        font-size:.875rem;
+        text-align:center;
+
+        span {
+            margin-right:.5rem;
+            i {
+                margin-right:.25rem;
+            }
+        }
+    }
+
+    .toggles {
+        position: fixed;
+        right: 1rem;
+        bottom: 2rem;
+        z-index: 10;
+
+        border: 1px solid var(--body-bd);
+        border-radius: .375rem;
+        background-color: var(--header-bg);
+        
+        font-size: 1.375rem;
+
+        padding: .25rem;
+
+        a {
+            display: block;
+            padding: .125rem .375rem;
+            border-radius: .25rem;
+            &:hover {
+                background-color: var(--blue-300);
+                color: var(--white);
+            }
+        }
+
+        .tolist {
+            .close {
+                display: none;
+            }
+        }
+    }
+}
+
+
+
+
+@media (min-width: $lg) {
+    #footer {
+        .toggles {
+            .tolist {
+                display: none;
+            }
+        }
+    }
 }

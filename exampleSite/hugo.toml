@@ -7,17 +7,41 @@ copyright = 'All rights reserved'
 
 [params]
   author = 'Homecat'
+  theme = 'light'
 
 [menus]
   [[menus.main]]
     name = 'Home'
     identifier = "home"
     pageRef = '/'
-    pre = '<i class="bi bi-house-fill"></i>'
     weight = 10
   [[menus.main]]
     name = 'Blog'
     identifier = "blog"
     pageRef = '/blog'
-    pre = '<i class="bi bi-file-post"></i>'
     weight = 20
+  [[menus.main]]
+    name = 'Docs'
+    identifier = "docs"
+    pageRef = '/docs'
+    weight = 30
+
+
+[taxonomies]
+  category = 'categories'
+  tag = 'tags'
+  series = 'series'
+
+# 用于渲染的参数
+[markup]
+    defaultMarkdownHandler = 'goldmark'
+    [markup.goldmark.renderer]
+        unsafe = true
+
+[module]
+  [module.hugoVersion]
+    extended = true
+    min = "0.140.0"
+
+
+

@@ -1,0 +1,29 @@
+.menu-main {
+    list-style: none;
+
+    margin-bottom: 1rem;
+    .menu-item {
+        padding: .25rem 0;
+        a {
+            color: var(--body-ft);
+            &:hover {
+                color: var(--link);
+            }
+        }
+        .active {
+            color: var(--link);
+        }
+    }
+}
+
+@media (min-width:$md) {
+    .menu-main {
+        font-size: .875rem;
+        margin-bottom: 0;
+        margin-left: 3rem;
+        .menu-item {
+            display: inline;
+            margin: 0 .5rem;
+        }
+    }
+}

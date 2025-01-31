@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Functions on Walden</title>
+    <link>http://localhost:1313/docs/part-3/</link>
+    <description>Recent content in Functions on Walden</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>All rights reserved</copyright>
+    <lastBuildDate>Wed, 29 Jan 2025 09:00:16 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/docs/part-3/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Sample 3-1</title>
+      <link>http://localhost:1313/docs/part-3/sample-1/</link>
+      <pubDate>Wed, 29 Jan 2025 09:00:13 +0800</pubDate>
+      <guid>http://localhost:1313/docs/part-3/sample-1/</guid>
+      <description>&lt;p&gt;Anim eiusmod irure incididunt sint cupidatat. Incididunt irure irure irure nisi ipsum do ut quis fugiat consectetur proident cupidatat incididunt cillum. Dolore voluptate occaecat qui mollit laborum ullamco et. Ipsum laboris officia anim laboris culpa eiusmod ex magna ex cupidatat anim ipsum aute. Mollit aliquip occaecat qui sunt velit ut cupidatat reprehenderit enim sunt laborum. Velit veniam in officia nulla adipisicing ut duis officia.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Sample 3-2</title>
+      <link>http://localhost:1313/docs/part-3/sample-2/</link>
+      <pubDate>Wed, 29 Jan 2025 09:00:16 +0800</pubDate>
+      <guid>http://localhost:1313/docs/part-3/sample-2/</guid>
+      <description>&lt;p&gt;Anim eiusmod irure incididunt sint cupidatat. Incididunt irure irure irure nisi ipsum do ut quis fugiat consectetur proident cupidatat incididunt cillum. Dolore voluptate occaecat qui mollit laborum ullamco et. Ipsum laboris officia anim laboris culpa eiusmod ex magna ex cupidatat anim ipsum aute. Mollit aliquip occaecat qui sunt velit ut cupidatat reprehenderit enim sunt laborum. Velit veniam in officia nulla adipisicing ut duis officia.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

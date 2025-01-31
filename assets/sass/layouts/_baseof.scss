@@ -3,6 +3,10 @@ html {
 }
 
 body {
+    background-color: var(--body-bg);
+    color: var(--body-ft);
+    line-height: 1.5rem;
+
     font-size: 16px;
     font-family: $sans;
 
@@ -10,117 +14,76 @@ body {
 
     display: flex;
     flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
 }
 
 #header {
-    position: fixed;
-    top: 0;
-    left: 0;
+    background-color: var(--header-bg);
+    border-bottom: 1px solid var(--body-bd);
 
     width: 100%;
     height: 60px;
 
-    background-color: var(--slate-100);
-    border-bottom: 1px solid var(--slate-300);
-}
-
-#necker {
-    margin-top: 60px;
+    padding: 1rem;
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 20;
 }
 
 #stager {
     flex: 1;
-    main {
-        .container {
-            margin: 0 1rem;
-        }
-    }
+    margin-top: 60px;
+
     aside {
-        .container {
-            margin: 2rem 1rem;
-            padding: 1rem;
-            background-color: var(--slate-050);
-        }
+        background-color: var(--stager-bg);
+        position: fixed;
+        top: 60px;
+        left: -100vw;
+        z-index: 10;
+
+        width: 100vw;
+        height: 100%;
     }
+
+    main {
+        background-color: var(--stager-bg-light);
+    }
+
 }
 
 #footer {
-
+    border-top: 1px solid var(--body-bd);
+    background-color: var(--footer-bg);
+    color: var(--footer-ft);
 }
 
-@media (min-width: $md) {
-    #header {
-        width: 240px;
-        height: 100%;
-
-        border-bottom: none;
-        border-right: 1px solid var(--slate-300);
-    }
-    
-    #necker {
-        margin-top: 0;
-        margin-left: 240px;
-    }
-    
+@media (min-width: $sm) {}
+@media (min-width: $md) {}
+@media (min-width: $lg) {
     #stager {
-        margin-left: 240px;
-        main {
-            .container {
-                margin: 0 2rem;
-            }
-        }
-        aside {
-            .container {
-                margin: 0 2rem;
-            }
-        }
-
-    }
-    
-    #footer {
-        margin-left: 240px;
-    }
-}
-
-@media (min-width: $xl) {
-    #stager {
-
         display: flex;
         flex-direction: row;
         align-items: stretch;
         justify-content: flex-start;
+    
+        aside {
+            position: relative;
+            top: auto;
+            left: auto;
+            z-index: auto;
+    
+            width: 350px;
+            height: auto;
+        }
+    
         main {
             flex: 1;
-            .container {
-                margin: 0 1rem 0 2rem;
-            }
-        }
-        aside {
-            width: 300px;
-            .container {
-                margin: 0 2rem 0 1rem;
-            }
-
         }
     }
 }
-
-@media (min-width: $xxl) {
-    #stager {
-        aside {
-            width: 350px;
-        }
-    }
-}
-
-@media (min-width: $xxxl) {
-    #stager {
-        aside {
-            width: 400px;
-        }
-    }
-}
-
-
-
-
+@media (min-width: $xl) {}
+@media (min-width: $xxl) {}
+@media (min-width: $xxxl) {}

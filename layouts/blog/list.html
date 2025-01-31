@@ -1,0 +1,19 @@
+{{ define "stager-aside" }}
+<div class="container">
+    <div class="container-inner">
+        {{ partial "stager/pub-category.html" . }}
+    </div>
+    <div class="container-inner">
+        {{ partial "stager/pub-tag.html" . }}
+    </div>
+</div>
+{{ end }}
+
+{{ define "stager-main" }}
+<div class="container">
+    <div class="container-inner">
+        {{ partial "stager/pub-breadcrumb.html" . }}
+    </div>
+    {{ partial "stager/blog-list.html" . }}
+</div>
+{{ end }}

@@ -1,0 +1,54 @@
+.card {
+    border-radius: .375rem;
+    border: 1px solid var(--body-bd);
+
+    background-color: var(--white);
+    
+    font-size: .875rem;
+
+    .card-title {
+        border-bottom: 1px solid var(--body-bd);
+        
+        padding: .75rem 1rem .5rem;
+
+        font-weight: bold;
+    }
+    .card-content {
+        padding: 1rem 1.5rem .5rem;
+
+        .dumbbell {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+
+            margin-bottom: .5rem;
+            .dashed-line {
+                flex: 1;
+
+                border-top: 1px dashed var(--body-ft);
+
+                margin: 0 1rem;
+            }
+
+            &:hover {
+                .dashed-line {
+                    flex: 1;
+    
+                    border-top: 1px dashed var(--link);
+    
+                    margin: 0 1rem;
+                }
+            }
+        }
+
+        .follow {
+            display: inline-block;
+            margin-right: 1rem;
+            margin-bottom: .5rem;
+            span {
+                margin-right: .25rem;
+            }
+        }
+    }
+}

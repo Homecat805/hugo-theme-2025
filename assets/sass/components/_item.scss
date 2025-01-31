@@ -1,0 +1,37 @@
+.item {
+    background-color: var(--white);
+    border-radius: .375rem;
+    border: 1px solid var(--body-bd);
+    padding: 1rem;
+    
+    .item-title {
+        font-size: 1.125rem;
+        font-weight: bold;
+
+        height: 1.5rem;
+        overflow-y:hidden;
+        display:-webkit-box;
+        -webkit-box-orient:vertical;
+        -webkit-line-clamp:1;
+        text-overflow:ellipsis;
+    }
+    p {
+        margin: .5rem 0;
+        height: 6rem;
+        overflow-y:hidden;
+        display:-webkit-box;
+        -webkit-box-orient:vertical;
+        -webkit-line-clamp:4;
+        text-overflow:ellipsis;
+    }
+    .item-meta {
+        font-size: .875rem;
+        span {
+            margin-right: 1rem;
+            i {
+                margin-right: .25rem;
+                color: var(--red-600);
+            }
+        }
+    }
+}

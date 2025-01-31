@@ -1,0 +1,13 @@
+<div class="card">
+    <div class="card-title">{{ upper "Tag" }}</div>
+    <div class="card-content">
+        {{ with .Site.Taxonomies.tags }}
+        {{ range . }}
+        <a class="follow" href="{{.Page.Permalink}}">
+            <span>{{.Page.Title}}</span>
+            <span class="count">{{.Count}}</span>
+        </a>
+        {{ end }}
+    {{ end }}
+    </div>
+</div>

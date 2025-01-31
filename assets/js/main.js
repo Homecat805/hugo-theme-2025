@@ -3,59 +3,58 @@ $(document).ready(function(){
     'use strict';
 
     // menu-main sider ---------------------------------------- start
-    // varialbles
-    const siderTarget = $('#sider');
-    const siderOpenBtn = $('#title').find('.sider-toggle').children('.open');
-    const siderCloseBtn = $('#title').find('.sider-toggle').children('.close');
+    const navTarget = $('#header').children('.nav');
+    const navOpenBtn = $('#header').find('.toggle').children('.open');
+    const navCloseBtn = $('#header').find('.toggle').children('.close');
    
-    // sider open action
-    siderOpenBtn.click(function(){
-        siderTarget.animate({left: 0});
-        siderCloseBtn.show();
-        siderOpenBtn.hide();
+    navOpenBtn.click(function(){
+        navTarget.animate({left: 0});
+        navCloseBtn.show();
+        navOpenBtn.hide();
     });
 
-    // sider close action
-    siderCloseBtn.click(function(){
-        siderTarget.animate({left: "-100vw"});
-        siderOpenBtn.show();
-        siderCloseBtn.hide();
+    navCloseBtn.click(function(){
+        navTarget.animate({left: "-100vw"});
+        navOpenBtn.show();
+        navCloseBtn.hide();
     });
     // menu-main sider ---------------------------------------- end
+
+    // menu-tree sider ---------------------------------------- start
+    const stageSider = $('#stager').find('aside');
+    const stageSiderOpenBtn = $('#footer').find('.tolist').children('.open');
+    const stageSiderCloseBtn = $('#footer').find('.tolist').children('.close');
+
+    stageSiderOpenBtn.click(function(){
+        stageSider.animate({left: 0});
+        stageSiderCloseBtn.show();
+        stageSiderOpenBtn.hide();
+    });
+
+    stageSiderCloseBtn.click(function(){
+        stageSider.animate({left: "-100vw"});
+        stageSiderOpenBtn.show();
+        stageSiderCloseBtn.hide();
+    });
+
+    // menu-tree sider ---------------------------------------- end
 
 
     
     // menu-tree ---------------------------------------------- start
-    // menu-tree menu-title open & close
-    const menuTitleClose = $('.menu-tree').find('.close');
-    const menuTitleOpen = $('.menu-tree').find('.open');
-
+    const menuTitleOpen = $('#menu-tree').find('.menu-tree-toggle');
     menuTitleOpen.click(function(){
-        $(this).hide();
-        $(this).siblings('.close').show();
-        $(this).parent().next('.menu-tree').show();
-        $(this).parent().parent().siblings('.menu-tree-title').children('.menu-tree').hide();
-        $(this).parent().parent().siblings('.menu-tree-title').children('.container').children('.close').hide();
-        $(this).parent().parent().siblings('.menu-tree-title').children('.container').children('.open').show();
-
+        $(this).next('.menu-tree').toggle();
     });
 
-    menuTitleClose.click(function(){
-        $(this).hide();
-        $(this).siblings('.open').show();
-        $(this).parent().next('.menu-tree').hide();
-    });
-
-    const itemActive = $('#menutree').find('.active');
-    itemActive.parent().parents('.menu-tree').show();
-    itemActive.parents().prev('.container').find('.open').hide();
-    itemActive.parents().prev('.container').find('.close').show();
-
+    const itemActive = $('#menu-tree').find('.active');
+    itemActive.parent().parent('.menu-tree').show();
     // menu-tree ---------------------------------------------- end
   
 });
 
 // scroll wheel  ---------------------------------------------- start
+$('.toggles').find('.totop').hide();
 
 $(window).scroll(function() {
     var distance = $(this).scrollTop();
