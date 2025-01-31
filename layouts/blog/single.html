@@ -1,21 +1,33 @@
-{{ define "stager-aside" }}
-<div class="container">
-    <div class="container-inner">
-        {{ partial "stager/pub-category.html" . }}
+{{ define "stager" }}
+<aside>
+    <div class="container">
+        {{ partial "stager/common-category.html" . }}
+        {{ partial "stager/common-tag.html" . }}
     </div>
-    <div class="container-inner">
-        {{ partial "stager/pub-tag.html" . }}
-    </div>
-</div>
-{{ end }}
+</aside>
 
-{{ define "stager-main" }}
-<div class="container">
-    <div class="container-inner">
-        {{ partial "stager/pub-breadcrumb.html" . }}
+<main>
+    <div id="breadcrumb">
+        {{ partial "stager/common-breadcrumb.html" . }}
     </div>
-    <div class="container-inner">
-        {{ partial "stager/blog-content.html" . }}
+    <div id="content">
+        <div class="container-left">
+            {{ partial "stager/common-content.html" . }}
+        </div>
+        <div class="container-right">
+            {{ partial "stager/common-toc.html" . }}
+            {{ partial "stager/common-readmore.html" . }}
+        </div>
     </div>
+</main>
+
+<div class="toggles">
+    <div class="toside">
+        <a class="open"><i class="bi bi-layout-sidebar"></i></a>
+        <a class="close"><i class="bi bi-x"></i></a>
+    </div>
+    <a href="#" class="totop"><i class="bi bi-chevron-up"></i></a>
+    <a href="#TableOfContents" class="totoc"><i class="bi bi-list-ul"></i></a>
 </div>
+
 {{ end }}

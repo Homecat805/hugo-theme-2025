@@ -22,8 +22,8 @@ $(document).ready(function(){
 
     // menu-tree sider ---------------------------------------- start
     const stageSider = $('#stager').find('aside');
-    const stageSiderOpenBtn = $('#footer').find('.tolist').children('.open');
-    const stageSiderCloseBtn = $('#footer').find('.tolist').children('.close');
+    const stageSiderOpenBtn = $('#stager').find('.toside').children('.open');
+    const stageSiderCloseBtn = $('#stager').find('.toside').children('.close');
 
     stageSiderOpenBtn.click(function(){
         stageSider.animate({left: 0});
@@ -54,15 +54,15 @@ $(document).ready(function(){
 });
 
 // scroll wheel  ---------------------------------------------- start
-$('.toggles').find('.totop').hide();
+// $('.toggles').find('.totop').hide();
 
-$(window).scroll(function() {
-    var distance = $(this).scrollTop();
-    if ( distance > 100) {
-        $('.toggles').find('.totop').show();
-    } else {
-        $('.toggles').find('.totop').hide();
-    }
-});
+// $(window).scroll(function() {
+//     var distance = $(this).scrollTop();
+//     if ( distance > 100) {
+//         $('.toggles').find('.totop').show();
+//     } else {
+//         $('.toggles').find('.totop').hide();
+//     }
+// });
 
 // scroll wheel ----------------------------------------------- end  

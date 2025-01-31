@@ -1,63 +1,38 @@
-article {
-    .container-left {
-        .title {
-            background-color: var(--body-bg);
-            text-align: center;
-            font-size: 1.375rem;
-            font-weight: bold;
+        article {
+            border-radius: .375rem;
+            border: 1px solid var(--body-bd);
+            background-color: var(--white);
 
-            padding: 2rem 1rem 0;
-        }
-        .meta {
-            background-color: var(--body-bg);
-            text-align: center;
-            font-size: .875rem;
-            padding: 1rem 1rem 2rem;
+            padding: 1rem;
 
-            span {
-                margin-right: 1rem;
+            .title {
+                background-color: var(--stager-bg-light);
+                text-align: center;
+                font-size: 1.5rem;
+                font-weight: bold;
+                padding: 2rem 1rem 1rem;
             }
+            .meta {
+                background-color: var(--stager-bg-light);
+                text-align: center;
+                font-size: .875rem;
+                padding: 0 1rem 2rem;
+                span {
+                    margin-right: 1rem;
+                }
+            }
+            .content {
+                margin: 2rem auto;
+                max-width: 900px;
+            }
+
         }
-        .content {
-            margin: 2rem auto;
-            max-width: 900px;
-        }
-    }
-    .container-right {
-        padding-top: 1.75rem;
-    }
-}
+
+
 
 @media (min-width: $sm) {
     article {
-        background-color: var(--white);
-
-        border-radius: .375rem;
-        border: 1px solid var(--body-bd);
-
         padding: 1.5rem;
-        .container-left {}
-        .container-right {}
     }
 }
 
-@media (min-width: $xxl) {
-    article {
-        display: flex;
-        flex-direction: row;
-        align-items: stretch;
-        justify-content: flex-start;
-        .container-left {
-            flex: 1;
-        }
-        .container-right {
-            width: 350px;
-            padding-top: 0;
-            padding-left: 1.75rem;
-            .container-right-inner {
-                position: sticky;
-                top: 84px;
-            }
-        }
-    }
-}

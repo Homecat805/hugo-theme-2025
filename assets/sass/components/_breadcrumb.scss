@@ -5,6 +5,7 @@
 ********************************************************/ 
 .breadcrumb {
     font-size: .875rem;
+    line-height: .875rem;
     .breadcrumb-item {
        display: inline;
        &+.breadcrumb-item:before {

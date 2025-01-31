@@ -2,22 +2,19 @@
 
     --primary: var(--blue-600);
 
-    --link: var(--red-600); 
+    --secondary: var(--red-600);
 
     --body-bg: var(--slate-000);
+    --body-bd: var(--slate-300);
     --body-ft: var(--slate-800);
-    --body-bd: var(--slate-200);
+    --body-ft-hover: var(--primary);
 
     --header-bg: var(--white);
-    --header-ft: var(--slate-800);
-    --header-ft-hover: var(--primary)
 
-    --stager-bg-dark: var(--slate-200);
     --stager-bg: var(--slate-100);
     --stager-bg-light: var(--slate-000);
 
     --footer-bg: var(--header-bg);
     --footer-ft: var(--slate-600);
-
 }
 

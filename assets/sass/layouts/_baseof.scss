@@ -3,14 +3,14 @@ html {
 }
 
 body {
+    height: 100%;
+
     background-color: var(--body-bg);
     color: var(--body-ft);
-    line-height: 1.5rem;
 
     font-size: 16px;
+    line-height: 1.5rem;
     font-family: $sans;
-
-    height: 100%;
 
     display: flex;
     flex-direction: column;
@@ -22,11 +22,9 @@ body {
     background-color: var(--header-bg);
     border-bottom: 1px solid var(--body-bd);
 
-    width: 100%;
     height: 60px;
+    width: 100%;
 
-    padding: 1rem;
-    
     position: fixed;
     top: 0;
     left: 0;
@@ -34,56 +32,13 @@ body {
 }
 
 #stager {
+    background-color: var(--body-bg);
     flex: 1;
-    margin-top: 60px;
-
-    aside {
-        background-color: var(--stager-bg);
-        position: fixed;
-        top: 60px;
-        left: -100vw;
-        z-index: 10;
-
-        width: 100vw;
-        height: 100%;
-    }
-
-    main {
-        background-color: var(--stager-bg-light);
-    }
-
+    padding-top: 60px;
 }
 
 #footer {
-    border-top: 1px solid var(--body-bd);
-    background-color: var(--footer-bg);
+    background-color: var(--header-bg);
     color: var(--footer-ft);
+    border-top: 1px solid var(--body-bd);
 }
-
-@media (min-width: $sm) {}
-@media (min-width: $md) {}
-@media (min-width: $lg) {
-    #stager {
-        display: flex;
-        flex-direction: row;
-        align-items: stretch;
-        justify-content: flex-start;
-    
-        aside {
-            position: relative;
-            top: auto;
-            left: auto;
-            z-index: auto;
-    
-            width: 350px;
-            height: auto;
-        }
-    
-        main {
-            flex: 1;
-        }
-    }
-}
-@media (min-width: $xl) {}
-@media (min-width: $xxl) {}
-@media (min-width: $xxxl) {}

@@ -6,6 +6,8 @@
     
     font-size: .875rem;
 
+    margin-bottom: 1rem;
+
     .card-title {
         border-bottom: 1px solid var(--body-bd);
         
@@ -35,7 +37,7 @@
                 .dashed-line {
                     flex: 1;
     
-                    border-top: 1px dashed var(--link);
+                    border-top: 1px dashed var(--secondary);
     
                     margin: 0 1rem;
                 }
@@ -50,5 +52,17 @@
                 margin-right: .25rem;
             }
         }
+
+        .normal {
+            display: block;
+            margin-bottom: .5rem;
+            line-height: 1.25rem;
+        }
+    }
+}
+
+@media (min-width: $sm) {
+    .card {
+        margin-bottom: 1.5rem;
     }
 }

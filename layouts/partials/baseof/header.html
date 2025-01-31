@@ -12,7 +12,11 @@
         {{ end }}
     </ul>
     <ul class="menu-main">
-        <li class="menu-item">{{.Site.Params.author}}</li>
+        {{ range .Site.Menus.social }}
+            <li class="menu-item">
+                <a href="{{.URL}}"><i class="{{.Pre}}"></i></a>
+            </li>
+        {{ end }}
     </ul>
 </div>
 
