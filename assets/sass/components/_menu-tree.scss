@@ -1,0 +1,32 @@
+#menu-tree {
+    .title {
+        font-weight: bold;
+        font-size: .875rem;
+    }
+    .menu-tree {
+        list-style: none;
+        font-size: .875rem;
+        line-height: 1.125rem;
+    
+        a {
+            display: block;
+            padding: .375rem.5rem;
+            margin: 1px 0;
+            color: var(--slate-600);
+            &:hover {
+                color: var(--white);
+                background-color: var(--primary-400);
+            }
+        }
+    
+        .active {
+            color: var(--white);
+            background-color: var(--primary-400);
+        }
+    
+        .menu-tree-toggle {
+            font-weight: bold;
+            background-color: var(--primary-200);
+        }
+    }
+}

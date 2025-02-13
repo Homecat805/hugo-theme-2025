@@ -1,5 +1,5 @@
 @import "./themes/root";
-@import "./themes/default";
+@import "./themes/green";
 
 @import "./basis/fonts";
 @import "./basis/variables";
@@ -10,10 +10,18 @@
 @import "./layouts/stager";
 @import "./layouts/footer";
 
+@import "./components/menu-menu";
+@import "./components/menu-tree";
+@import "./components/menu-social";
+
+@import "./components/headline";
+
 @import "./components/breadcrumb";
-@import "./components/card";
-@import "./components/menutree";
-@import "./components/item";
-@import "./components/article";
+
+@import "./components/content";
 @import "./components/markdown";
-@import "./components/toc";
+@import "./components/card";
+
+@import "./components/item";
+
+

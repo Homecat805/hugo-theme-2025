@@ -1,68 +1,83 @@
 .card {
-    border-radius: .375rem;
-    border: 1px solid var(--body-bd);
-
-    background-color: var(--white);
-    
-    font-size: .875rem;
-
-    margin-bottom: 1rem;
-
     .card-title {
-        border-bottom: 1px solid var(--body-bd);
-        
-        padding: .75rem 1rem .5rem;
-
         font-weight: bold;
+        color: var(--primary-700);
+        padding: 1rem .5rem 1rem;
     }
     .card-content {
-        padding: 1rem 1.5rem .5rem;
+        padding: 1rem;
+        background-color: var(--primary-000);
 
-        .dumbbell {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: space-between;
-
-            margin-bottom: .5rem;
-            .dashed-line {
-                flex: 1;
-
-                border-top: 1px dashed var(--body-ft);
-
-                margin: 0 1rem;
-            }
-
-            &:hover {
-                .dashed-line {
-                    flex: 1;
-    
-                    border-top: 1px dashed var(--secondary);
-    
-                    margin: 0 1rem;
-                }
-            }
-        }
-
-        .follow {
-            display: inline-block;
-            margin-right: 1rem;
-            margin-bottom: .5rem;
-            span {
-                margin-right: .25rem;
-            }
-        }
+        font-size: .875rem;
 
         .normal {
-            display: block;
-            margin-bottom: .5rem;
-            line-height: 1.25rem;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: flex-start;
+
+                padding: .125rem.5rem;
+                margin: 1px 0;
+
+            i {
+                margin-right: .5rem;
+            }
+
+        }
+
+    }
+
+    a {
+        color: var(--primary-600);
+        &:hover {
+            color: var(--white);
+            background-color: var(--primary-400);
         }
     }
+
+    .dumbbell {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        font-size: .875rem;
+
+        padding: .125rem .5rem;
+        margin: 1px 0;
+        color: var(--primary-600);
+
+        .dashed-line {
+            flex: 1;
+            border-top: 1px dashed var(--slate-600);
+            margin: 0 1rem;
+        }
+
+        &:hover {
+            .dashed-line {
+                flex: 1;
+                border-top: 1px dashed var(--white);
+                margin: 0 1rem;
+            }
+        }
+    }
+
 }
 
-@media (min-width: $sm) {
-    .card {
-        margin-bottom: 1.5rem;
+#TableOfContents {
+    ul {
+        font-size: .875rem;
+        list-style: none;
+        li {
+            a {
+                display: block;
+                padding: .125rem.5rem;
+                margin: 1px 0;
+            }
+
+            ul {
+                margin-left: 1rem;
+            }
+        }
     }
 }

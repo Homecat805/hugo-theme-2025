@@ -1,11 +1,6 @@
-/********************************************************
-* CSS - Breadcrumb 
-* Author: Homecat
-* Email: 13050082@qq.com    Homepage: genway.com.cn
-********************************************************/ 
 .breadcrumb {
     font-size: .875rem;
-    line-height: .875rem;
+    line-height: 1.5rem;
     .breadcrumb-item {
        display: inline;
        &+.breadcrumb-item:before {

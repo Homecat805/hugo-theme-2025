@@ -10,13 +10,6 @@ a {
     cursor: pointer;
     transition: .5s;
     text-decoration: none;
-    color: var(--body-ft);
-    &:hover {
-        color: var(--secondary);
-    }
-}
-.active {
-    color: var(--secondary);
 }
 
 img {

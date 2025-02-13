@@ -1,46 +1,45 @@
 #header {
+    padding: 1rem;
 
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
 
-    .logo {
-        font-size: 1.25rem;
-        font-weight: bold;
-        padding: 1rem;
-    }
-
-    .nav {
-        background-color: var(--header-bg);
-
-        position: fixed;
-        top: 60px;
-        left: -100vw;
-        z-index: 20;
-
-        width: 100vw;
-        height: 100%;
-
-        padding: 1rem;
-
-        font-size: .875rem;
-
-        .menu-main {
-            margin-bottom: 1rem;
-            list-style: none;
-            .menu-item {
-                margin-bottom: .25rem;
-                i {
-                    font-size: 1.375rem;
-                }
-            }
+    a {
+        color: var(--primary-800);
+        &:hover {
+            color: var(--white);
         }
     }
 
-    .toggle {
+    .active {
+        color: var(--white);
+    }
+
+    .logo {
+        font-size: 1.25rem;
+        font-weight: bold;
+
+    }
+
+    .nav {
+        position: fixed;
+        top: 60px;
+        left: -100vw;
+        bottom: 0;
+        z-index: 20;
+
+        background-color: var(--primary-400);
+
+        width: 100vw;
+
         padding: 1rem;
+    }
+
+    .nav-toggle {
         font-size: 1.5rem;
+
         .close {
             display: none;
         }
@@ -48,33 +47,31 @@
 }
 
 
-@media (min-width: $lg) {
+@media (min-width: $sm) {
     #header {
         .nav {
-            display: flex;
-            flex-direction: row;
-
             position: relative;
             top: auto;
             left: auto;
+            bottom: auto;
             z-index: auto;
 
+            background-color: var(--primary-500);
+
             width: auto;
-            height: auto;
 
-            .menu-main {
-                margin-bottom: 0;
-                margin-left: 1rem;
-                .menu-item {
-                    display: inline-block;
-                    margin-bottom: 0;
-                    margin-left: 1rem;
-                }
-            }
+            padding: 0;
+
         }
-
-        .toggle {
+        .nav-toggle {
             display: none;
         }
+    }
+
+}
+
+@media (min-width: $lg) {
+    #header {
+        padding: 0 1.5rem;
     }
 }

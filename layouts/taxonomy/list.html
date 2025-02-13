@@ -1,26 +1,23 @@
 {{ define "stager" }}
-<aside>
-    <div class="container">
-        {{ partial "stager/common-category.html" . }}
-        {{ partial "stager/common-tag.html" . }}
-    </div>
-</aside>
-
-<main>
-    <div id="breadcrumb">
-        {{ partial "stager/common-breadcrumb.html" . }}
-    </div>
-    <div id="bloglist">
-        {{ partial "stager/blog-list.html" . }}
-    </div>
-</main>
-
-<div class="toggles">
-    <div class="toside">
-        <a class="open"><i class="bi bi-layout-sidebar"></i></a>
-        <a class="close"><i class="bi bi-x"></i></a>
-    </div>
-    <a href="#" class="totop"><i class="bi bi-chevron-up"></i></a>
+<div class="stager">
+    <aside>
+        <div class="container">
+            {{ partial "category.html" . }}
+        </div>
+    </aside>
+    <main>
+        <div class="container">
+            {{ partial "breadcrumb" . }}
+        </div>
+        <div class="container-list">
+            {{ partial "itemlist" . }}
+        </div>
+    </main>
 </div>
 
+<div class="toggles">
+    <a class="aside-open"><i class="bi bi-layout-sidebar"></i></a>
+    <a class="aside-close"><i class="bi bi-x"></i></a>
+    <a href="#"><i class="bi bi-chevron-up"></i></a>
+</div>
 {{ end }}

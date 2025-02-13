@@ -4,8 +4,8 @@ $(document).ready(function(){
 
     // menu-main sider ---------------------------------------- start
     const navTarget = $('#header').children('.nav');
-    const navOpenBtn = $('#header').find('.toggle').children('.open');
-    const navCloseBtn = $('#header').find('.toggle').children('.close');
+    const navOpenBtn = $('#header').find('.nav-toggle').children('.open');
+    const navCloseBtn = $('#header').find('.nav-toggle').children('.close');
    
     navOpenBtn.click(function(){
         navTarget.animate({left: 0});
@@ -20,27 +20,25 @@ $(document).ready(function(){
     });
     // menu-main sider ---------------------------------------- end
 
-    // menu-tree sider ---------------------------------------- start
-    const stageSider = $('#stager').find('aside');
-    const stageSiderOpenBtn = $('#stager').find('.toside').children('.open');
-    const stageSiderCloseBtn = $('#stager').find('.toside').children('.close');
-
-    stageSiderOpenBtn.click(function(){
-        stageSider.animate({left: 0});
-        stageSiderCloseBtn.show();
-        stageSiderOpenBtn.hide();
-    });
-
-    stageSiderCloseBtn.click(function(){
-        stageSider.animate({left: "-100vw"});
-        stageSiderOpenBtn.show();
-        stageSiderCloseBtn.hide();
-    });
-
-    // menu-tree sider ---------------------------------------- end
-
-
+   
+    // stage-left sider ---------------------------------------- start
+    const leftTarget = $('#stager').find('aside');
+    const leftOpenBtn = $('#stager').find('.aside-open');
+    const leftCloseBtn = $('#stager').find('.aside-close');
     
+    leftOpenBtn.click(function(){
+        leftTarget.animate({left: 0});
+        leftCloseBtn.show();
+        leftOpenBtn.hide();
+    });
+
+    leftCloseBtn.click(function(){
+        leftTarget.animate({left: "-100vw"});
+        leftOpenBtn.show();
+        leftCloseBtn.hide();
+    });
+    // stage-left sider ---------------------------------------- end
+
     // menu-tree ---------------------------------------------- start
     const menuTitleOpen = $('#menu-tree').find('.menu-tree-toggle');
     menuTitleOpen.click(function(){
@@ -52,17 +50,3 @@ $(document).ready(function(){
     // menu-tree ---------------------------------------------- end
   
 });
-
-// scroll wheel  ---------------------------------------------- start
-// $('.toggles').find('.totop').hide();
-
-// $(window).scroll(function() {
-//     var distance = $(this).scrollTop();
-//     if ( distance > 100) {
-//         $('.toggles').find('.totop').show();
-//     } else {
-//         $('.toggles').find('.totop').hide();
-//     }
-// });
-
-// scroll wheel ----------------------------------------------- end  

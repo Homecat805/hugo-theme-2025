@@ -5,8 +5,8 @@ html {
 body {
     height: 100%;
 
-    background-color: var(--body-bg);
-    color: var(--body-ft);
+    background-color: var(--white);
+    color: var(--slate-800);
 
     font-size: 16px;
     line-height: 1.5rem;
@@ -16,11 +16,13 @@ body {
     flex-direction: column;
     align-items: stretch;
     justify-content: flex-start;
+
+    padding-top: 60px;
 }
 
 #header {
-    background-color: var(--header-bg);
-    border-bottom: 1px solid var(--body-bd);
+    background-color: var(--primary-500);
+    color: var(--primary-900);
 
     height: 60px;
     width: 100%;
@@ -32,13 +34,5 @@ body {
 }
 
 #stager {
-    background-color: var(--body-bg);
     flex: 1;
-    padding-top: 60px;
-}
-
-#footer {
-    background-color: var(--header-bg);
-    color: var(--footer-ft);
-    border-top: 1px solid var(--body-bd);
 }

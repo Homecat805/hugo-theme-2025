@@ -5,6 +5,7 @@ date = {{ .Date }}
 weight = 1
 categories = ''
 tags = ['']
+series = ''
 [params]
   author = 'Homecat'
 +++

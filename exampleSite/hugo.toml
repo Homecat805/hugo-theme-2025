@@ -1,52 +1,23 @@
-baseURL = "https://example.org/"
-languageCode = "en-us"
-title = "Walden"
+baseURL = 'https://example.org/'
+languageCode = 'en-US'
+title = 'My New Hugo Site'
 
-theme = "hugo-theme-2025"
-copyright = "All rights reserved"
+[[menus.main]]
+name = 'Home'
+pageRef = '/'
+weight = 10
 
-[params]
-  author = "Homecat"
-  theme = "light"
+[[menus.main]]
+name = 'Posts'
+pageRef = '/posts'
+weight = 20
 
-[menus]
-  [[menus.main]]
-    name = "Home"
-    identifier = "home"
-    pageRef = "/"
-    weight = 10
-  [[menus.main]]
-    name = "Blog"
-    identifier = "blog"
-    pageRef = "/blog"
-    weight = 20
-  [[menus.main]]
-    name = "Docs"
-    identifier = "docs"
-    pageRef = "/docs"
-    weight = 30
-
-  [[menus.social]]
-    name = "Github"
-    pre = "bi bi-github"
-    url = "https://github.com/homecat805"
-    weight = 10
-
-[taxonomies]
-  category = "categories"
-  tag = "tags"
-  series = "series"
-
-# 用于渲染的参数
-[markup]
-    defaultMarkdownHandler = "goldmark"
-    [markup.goldmark.renderer]
-        unsafe = true
+[[menus.main]]
+name = 'Tags'
+pageRef = '/tags'
+weight = 30
 
 [module]
   [module.hugoVersion]
-    extended = true
-    min = "0.140.0"
-
-
-
+    extended = false
+    min = "0.116.0"

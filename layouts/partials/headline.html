@@ -1,0 +1,41 @@
+<div class="headline">
+
+    {{ $pages := where .Site.RegularPages "Params.series" "headline" }}
+
+    {{ range first 1 $pages  }}
+
+    {{ with .Resources.Get "headline.jpg" }}
+    <div class="first" style="background: url({{ .RelPermalink }}) center center no-repeat;">
+    {{ else }}
+    <div class="first" style="background: url({{ "images/headline.jpg" | relURL }}) center center no-repeat;">
+    {{ end }}
+        <div class="text">
+            <a href="{{ .Permalink }}">{{ .Params.title }}</a>
+            <p>{{ .Summary }}</p>
+        </div>
+    </div>
+    {{ end }}
+
+    <div class="rest">
+        {{ range after 1 ( first 4 $pages ) }}
+        <div class="rest-container">
+            <div class="rest-headline">
+                <div class="thumbnail">
+                {{ with .Resources.Get "thumbnail.jpg" }}
+                    <img src="{{ .RelPermalink }}" alt="Thumbnail">
+                {{ else }}
+                    <img src="{{ "images/thumbnail.jpg" | relURL }}" alt="Thumbnail">
+                {{ end }}
+                </div>
+            
+                <div class="text">
+                    <div class="category">{{.Params.categories}}</div>
+                    <a class="title" href="{{ .Permalink }}">{{ .Params.title }}</a>
+                    <div class="summary">{{.Summary}}</div>
+                </div>
+            </div>
+        </div>
+        {{ end }}
+    </div>
+
+</div>
