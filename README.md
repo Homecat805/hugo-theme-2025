@@ -10,13 +10,11 @@ Two ways to see the demo：
 - View demo by clone repository from Github.
 
 ```
-git clone https://github.com/homecat805/hugo-theme-walden.git hugo-theme-walden
+git clone https://github.com/homecat805/hugo-theme-2025.git hugo-theme-2025
 cd exampleSite
 hugo server --themesDir ../..
 ```
 ## Quick start
-
-Create the website root directory mysite and perform git initialization, then install the theme as a module to `mysite/themes`, and copy all the files in `exampleSite` in theme directory to the root directory of the website.
 
 ```
 mkdir mysite
