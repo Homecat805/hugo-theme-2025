@@ -1,12 +1,13 @@
 .breadcrumb {
     font-size: .875rem;
-    line-height: 1.5rem;
+    list-style: none;
+    color: var(--slate-700);
     .breadcrumb-item {
-       display: inline;
-       &+.breadcrumb-item:before {
-          content: "|";
-          margin: 0 .75rem;
-          font-size: .75rem;
-       }
+        display: inline-block;
+        &+.breadcrumb-item:before {
+            content: "|";
+            margin: 0 .5rem;
+            font-size: .75rem;
+         }
     }
- }
+}

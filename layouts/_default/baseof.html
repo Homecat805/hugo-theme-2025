@@ -1,20 +1,27 @@
 <!DOCTYPE html>
-<html lang="{{ .Site.Language.LanguageCode }}" data-theme="{{.Site.Params.theme}}">
-    <head>
-        {{ partial "baseof/head.html" . }}
-    </head>
-    <body>
-        <header id="header">
-            {{ partial "baseof/header.html" . }}
-        </header>
+<html lang="{{ .Site.Language.LanguageCode }}" data-theme="{{.Site.Params.themestyle}}">
+  <head>
+    {{ partial "baseof/head.html" . }}
+  </head>
+  <body>
 
-        <div id="stager">
-            {{ block "stager" . }}{{ end }}
-        </div>
+    <header id="header">
+      {{ partial "baseof/header.html" . }}
+    </header>
+     
+    <div id="necker">
+      {{ block "necker" . }}{{ end }}
+    </div>
 
-        <footer id="footer">
-            {{ partial "baseof/footer.html" . }}
-        </footer>
-        {{ partial "baseof/foot.html" . }}
-    </body>
+    <div id="stager">
+      {{ block "stager" . }}{{ end }}
+    </div>
+    
+    <footer id="footer">
+      {{ partial "baseof/footer.html" . }}
+    </footer>
+    {{ partial "baseof/foot.html" . }}
+    
+  </body>
 </html>
+

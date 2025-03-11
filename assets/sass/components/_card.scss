@@ -1,38 +1,40 @@
 .card {
     .card-title {
         font-weight: bold;
-        color: var(--primary-700);
-        padding: 1rem .5rem 1rem;
+        color: var(--slate-700);
+
+        padding: 0 .5rem 1rem;
+
     }
     .card-content {
-        padding: 1rem;
-        background-color: var(--primary-000);
-
         font-size: .875rem;
-
-        .normal {
-            display: flex;
-            flex-direction: row;
-            align-items: flex-start;
-            justify-content: flex-start;
-
-                padding: .125rem.5rem;
-                margin: 1px 0;
-
-            i {
-                margin-right: .5rem;
-            }
-
-        }
-
     }
 
     a {
-        color: var(--primary-600);
+        color: var(--slate-600);
         &:hover {
             color: var(--white);
             background-color: var(--primary-400);
         }
+    }
+
+    .normal {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+
+            padding: .125rem .5rem;
+            margin: 1px 0;
+
+        i {
+            margin-right: .5rem;
+        }
+    }
+
+    .follow {
+        display: inline-block;
+        padding: .125rem .5rem;
     }
 
     .dumbbell {
@@ -45,7 +47,6 @@
 
         padding: .125rem .5rem;
         margin: 1px 0;
-        color: var(--primary-600);
 
         .dashed-line {
             flex: 1;

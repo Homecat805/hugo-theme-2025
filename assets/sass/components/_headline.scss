@@ -1,139 +1,133 @@
 .headline {
-    .first {
-        width: 100%;
-        height: 400px;
-
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-
-        .text {
-            background-color: rgba(0,0,0,.50);
-
-            padding: 1rem 2rem;
-            margin: 1rem;
-            text-align: center;
-            border-radius: 1rem;
-            a {
-                display: block;
-                margin-top: 1rem;
-                font-size: 1.5rem;
-                color: var(--slate-300);
-                transition: all .75s;
-                &:hover {
-                    color: var(--white);
-                }
-            }
-            p {
-                margin-top: 1rem;
-                color: var(--slate-300);
-                font-size: 1rem;
-                line-height: 1.5rem;
-                text-align: left;
-
-
-                overflow-y: hidden;
-                display: -webkit-box;
-                -webkit-box-orient: vertical;
-                -webkit-line-clamp: 4;
-                text-overflow: ellipsis;
-            }
-        }
+    .headline-img {
+        width: 100vw;
+        height: 100vw;
     }
 
-    .rest {
-        margin: 1rem auto;
-
+    
+    .headline-text {
+        background-color: var(--primary-500);
+        padding: 2rem 2rem 5rem;
+        height: 100vw;
+        
         display: flex;
-        flex-flow: wrap;
-        padding: .5rem;
-
-        .rest-container {
-            width: 100%;
-            padding: .5rem;
-            .thumbnail {
-                img {
-                    object-fit: cover;
-                    height: 120px;
-                    width: 100%;
-                    display: block;
-                    border-radius: .5rem .5rem 0 0;
-                }
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        a {
+            font-size: 2rem;
+            height: 2.6rem;
+            overflow-y:hidden;
+            text-overflow:ellipsis;
+            
+            color: var(--slate-300);
+            transition: all .75s;
+            &:hover {
+                color: var(--white);
             }
+        }
+        p {
+            max-width: 85%;
+            margin-top: .5rem;
+            color: var(--slate-300);
+            font-size: 1rem;
+            line-height: 1.5rem;
+            text-align: left;
 
-            .text {
-                background-color: var(--primary-000);
-                padding: 1rem;
-                border-radius: 0 0 .5rem .5rem;
-        
-                .category {
-                    font-size: .75rem;
-                    font-weight: bold;
-                    color: var(--primary-600);
-                    padding-bottom: .5rem;
-                    line-height: .75rem;
-                    text-align: right;
-                }
-                .title {
-                    display: block;
-        
-                    font-size: 1rem;
-                    font-weight: bold;
-                    padding-bottom: .5rem;
-        
-                    overflow-x: hidden;
-                    text-overflow: ellipsis;
-                    white-space: nowrap;
-                    
-                    color: var(--slate-600);
-                    &:hover {
-                        color: var(--primary-600);
-                    }
-                }
-                .summary {
-                    p {
-                        height: 6rem;
-                        font-size: .875rem;
-                        line-height: 1.5rem;
-                        color: var(--slate-600);
-        
-                        overflow-y:hidden;
-                        display:-webkit-box;
-                        -webkit-box-orient:vertical;
-                        -webkit-line-clamp:4;
-                        text-overflow:ellipsis;
-                    }
-                }
-            }
+            overflow-y: hidden;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 5;
+            text-overflow: ellipsis;
         }
     }
 }
 
-@media (min-width: $md) {
-    .headline {
-        .first {
-            .text {
-                width: 85%;
-                max-width: 1000px;
+.headline-list-container {
+    padding: 1rem;
+    display: flex;
+    flex-flow: wrap;
+    .headline-item-container {
+        width: 100%;
+        padding: 1rem;
+        .headline-item {
+            background-color: var(--white);
+            .item-thumbnail {}
+            .item-content {
+                padding: 1rem;
+
+                .content-title {
+                    font-size: 1rem;
+                    font-weight: bold;
+                    color: var(--slate-800);
+                    &:hover {
+                        color: var(--primary-500);
+                    }
+                }
+                .content-summary {
+                    font-size: .875rem;
+                    line-height: 1.25rem;
+                    color: var(--slate-700);
+                    height: 5rem;
+                    margin: .5rem 0;
+ 
+                    overflow-y: hidden;
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 4;
+                    text-overflow: ellipsis;
+                }
             }
+
         }
-        .rest {
-            width: 85%;
-            .rest-container {
-                width: 50%;
-            }
+    }
+}
+
+
+@media (min-width: $sm) {
+    .headline {
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+        justify-content: flex-start;
+        .headline-img {
+            width: 50%;
+            max-height: 500px;
+            height: auto
+        }
+        .headline-text {
+            width: 50%;
+            height: auto;
+        }
+    }
+
+    .headline-list-container {
+        .headline-item-container {
+            width: 50%;
+        }
+    }
+}
+
+
+@media (min-width: $lg) {
+    .headline {
+
+    }
+    .headline-list-container {
+
+        .headline-item-container {
+
+            width: 33.33%;
         }
     }
 }
 
 @media (min-width: $xl) {
-    .headline {
-        .rest {
+    .headline-list-container {
 
-            .rest-container {
-                width: 33.33%;
-            }
+        .headline-item-container {
+
+            width: 25%;
         }
     }
 }

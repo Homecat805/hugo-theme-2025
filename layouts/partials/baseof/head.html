@@ -5,16 +5,20 @@
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 <link rel="manifest" href="/site.webmanifest">
-<!-- Bootstrap Icons -->
-<link rel="stylesheet" href="{{"./vendor/bootstrap-icons-1.11.3/font/bootstrap-icons.css" | relURL }}">
+
 <!-- SASS -->
 {{- with resources.Get "sass/main.scss" | css.Sass (dict "targetPath" "css/main.css" ) }}
-    {{- if eq hugo.Environment "development" }}
-<link rel="stylesheet" type="text/css" href="{{ .RelPermalink }}">
-    {{- else }}
-        {{- with . | minify | fingerprint }}
+    {{ if hugo.IsProduction }}
+        {{ with . | minify | fingerprint }}
 <link rel="stylesheet" type="text/css" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
-        {{- end }}
-    {{- end }}
+        {{ end }}
+    {{ else }}
+<link rel="stylesheet" type="text/css" href="{{ .RelPermalink }}">
+    {{ end }}
+
 {{- end }}
+
 <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s | %s" .Title site.Title }}{{ end }}</title>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+

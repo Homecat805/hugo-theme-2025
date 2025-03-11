@@ -1,17 +1,17 @@
-name = 'Hugo Theme 2025'
+name = 'Hugo-Theme-2025'
 license = 'MIT'
-licenselink = 'https://github.com/Homecat805/hugo-theme-2025?tab=MIT-1-ov-file'
+licenselink = 'https://github.com/Homecat805/hugo-theme-2025?tab=MIT-1-ov-file#readme'
 description = 'Theme description'
 
 # The home page of the theme, where the source can be found
-homepage = 'https://genway.com.cn/'
+homepage = 'https://github.com/Homecat805/hugo-theme-2025'
 
 # If you have a running demo of the theme
-demosite = 'https://genway.com.cn/'
+demosite = 'https://2025.genway.com.cn'
 
 # Taxonomy terms
-tags = ['blog', 'document']
-features = ['responsive', 'original']
+tags = ['blog', 'personal','light','minimal']
+features = ['responsive']
 
 # If the theme has multiple authors
 # authors = [
@@ -22,10 +22,10 @@ features = ['responsive', 'original']
 # If the theme has a single author
 [author]
   name = 'Homecat'
-  homepage = 'https://genway.com.cn/'
+  homepage = 'https://genway.com.cn'
 
 # If porting an existing theme
 # [original]
-#   author = 'Name of original author'
-#   homepage = 'Website of original author'
-#   repo = 'https://github.com/owner/repo'
+#  author = 'Name of original author'
+#  homepage = 'Website of original author'
+#  repo = 'https://github.com/owner/repo'

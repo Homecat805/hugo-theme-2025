@@ -1,29 +1,31 @@
+{{ define "necker" }}
+
+{{ end }}
+
 {{ define "stager" }}
-<div class="stager">
-    <aside>
-        <div class="container">
-            {{ partial "menutree.html" . }}
-        </div>
-    </aside>
+<div class="default">
     <main>
-        <div class="container">
-            {{ partial "breadcrumb" . }}
+        <div class="item-container">
+            {{ partial "breadcrumb.html" . }}
         </div>
-        <div class="container-single">
-            <div class="inner-left">
-                {{ partial "content" . }}
-            </div>
-            <div class="inner-right">
-                {{ partial "toc" . }}
-            </div>
+    
+        <div class="item-container">
+            {{ partial "blog-list.html" . }}
         </div>
     </main>
-</div>
-
-<div class="toggles">
-    <a class="aside-open"><i class="bi bi-layout-sidebar"></i></a>
-    <a class="aside-close"><i class="bi bi-x"></i></a>
-    <a href="#"><i class="bi bi-chevron-up"></i></a>
-    <a href="#TableOfContents" class="totoc"><i class="bi bi-list-ul"></i></a>
+    
+    <aside>
+        <div class="item-container">
+            <div class="item-sub-container">
+                {{ partial "card-category.html" . }}
+            </div>
+            
+            <div class="item-sub-container">
+                {{ partial "card-tag.html" . }}
+            </div>
+        </div>
+    </aside>
 </div>
 {{ end }}
+
+

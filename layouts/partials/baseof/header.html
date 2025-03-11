@@ -1,4 +1,4 @@
-<span class="logo">{{.Site.Title}}</span>
+<span class="title">{{.Site.Title}}</span>
 
 <div class="nav">
     <ul class="menu-main">
@@ -8,13 +8,6 @@
             {{ $active = or $active ( eq .Identifier $current.Section ) }}
             <li class="menu-item">
                 <a class="{{ if $active }} active {{ end }}" href="{{ .URL }}">{{ .Name }}</a>
-            </li>
-        {{ end }}
-    </ul>
-    <ul class="menu-social">
-        {{ range .Site.Menus.social }}
-            <li class="menu-item">
-                <a href="{{.URL}}"><i class="{{.Pre}}"></i></a>
             </li>
         {{ end }}
     </ul>

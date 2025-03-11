@@ -1,183 +1,68 @@
-.stager {
-    height: 100%;
-
-    aside {
-        position: fixed;
-        top: 60px;
-        left: -100vw;
-        z-index: 10;
-
-        width: 100vw;
+#stager {
+    .default {
         height: 100%;
-
-        background-color: var(--primary-100);
-
-        .container {
-            padding: 1.5rem;
-        }
-    }
-    main {
-        .container {
-            padding: 1rem;
-        }
-
-        .container-single {
-            padding: .5rem;
-            .inner-left {
-                padding: .5rem;
+        main {
+            .item-container {
+                padding: 1rem;
             }
-            .inner-right {
-                padding: .5rem;
+            padding-bottom: 2rem;
+        }
+        aside {
+            background-color: var(--slate-300);
+            .item-container {
+                padding: 1rem;
+                .item-sub-container {
+                    padding: .5rem;
+                }
             }
         }
     }
 }
 
-.toggles {
-    position: fixed;
-    right: 1rem;
-    bottom: 1.5rem;
-    z-index: 15;
-
-    background-color: var(--primary-500);
-    border-radius: .375rem;
-
-    padding: .25rem;
-
-    a {
-        display: block;
-        font-size: 1.5rem;
-        padding: .25rem;
-
-        color: var(--primary-700);
-        &:hover {
-            color: var(--white);
-        }
-
-    }
-
-    .aside-close {
-        display: none;
-    }
-}
 
 @media (min-width: $sm) {
-    .stager {
 
-        aside {
-            .container {
-                padding: 1.5rem;
+    #stager {
+        .default {
+            main {
+                .item-container {
+                    padding: 1rem 2rem 1rem;
+                }
             }
         }
-
-        main {
-        }
-
     }
 }
 
-
 @media (min-width: $md) {
-    .stager {
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-        justify-content: flex-start;
 
-        aside {
-            position: relative;
-            top: auto;
-            left: auto;
-            z-index: auto;
-
-            width: 260px;
-
-            .container {
-                padding: 1rem;
-                position: sticky;
-                top: 60px;
-            }
-        }
-
-        main {
-            flex: 1;
-
-
-        }
-
-    }
+    #stager {
+        .default {
+            display: flex;
+            flex-direction: row;
+            align-items: stretch;
+            justify-content: flex-start;
     
-    .toggles {
-        .aside-open {
-            display: none;
+            main {
+                flex: 1;
+            }
+            aside {
+                width: 250px;
+    
+                .item-container {
+                    position: sticky;
+                    top: 60px;
+                }
+            }
         }
     }
 }
 
 @media (min-width: $lg) {
-    .stager {
-        aside {
-            width: 280px;
-            .container {
-                padding: 1.5rem;
-            }
-        }
 
-        main {
-            .container {
-                padding: 1.5rem;
-            }
-
-            .container-single {
-                padding: .75rem;
-                .inner-left {
-                    padding: .75rem;
-                }
-                .inner-right {
-                    padding: .75rem;
-                }
-            }
-        }
-    }
-
-}
-
-@media (min-width: $xxl) {
-    .stager {
-        aside {
-            width: 300px;
-        }
-        main {
-            .container-single {
-                display: flex;
-                flex-direction: row;
-                align-items: self-start;
-                justify-content: flex-start;
-                .inner-left {
-                    flex: 1;
-                }
-
-                .inner-right {
-                    width: 300px;
-                }
-            }
-        }
-    }
-
-    .toggles {
-        .totoc {
-            display: none;
-        }
-    }
-}
-
-@media (min-width: $xxxl) {
-    .stager {
-        main {
-            .container-single {
-                .inner-right {
-                    width: 350px;
-                }
+    #stager {
+        .default {
+            aside {
+                width: 300px;
             }
         }
     }
