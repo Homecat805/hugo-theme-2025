@@ -14,13 +14,17 @@
         </div>
     </main>
     
-    <aside>
+    <aside id="button">
         <div class="item-container">
             <div class="item-sub-container">
                 {{ partial "card-toc.html" . }}
             </div>
         </div>
     </aside>
+</div>
+
+<div id="button-toggle">
+    <a href="#button"><i class="bi bi-list-ul"></i></a>
 </div>
 {{ end }}
 
