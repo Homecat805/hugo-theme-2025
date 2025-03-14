@@ -60,6 +60,7 @@
             justify-content: flex-start;
     
             main {
+                overflow: auto;
                 flex: 1;
             }
             aside {
