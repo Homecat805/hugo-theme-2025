@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Reading on Genway</title>
+    <link>http://localhost:1313/categories/reading/</link>
+    <description>Recent content in Reading on Genway</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <copyright>All rights reserved.</copyright>
+    <lastBuildDate>Fri, 07 Mar 2025 12:37:49 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/reading/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Walden</title>
+      <link>http://localhost:1313/blog/walden/</link>
+      <pubDate>Fri, 07 Mar 2025 12:37:49 +0800</pubDate>
+      <guid>http://localhost:1313/blog/walden/</guid>
+      <description>&lt;p&gt;Walden, series of 18 essays by Henry David Thoreau, published in 1854. An important contribution to New England Transcendentalism, the book was a record of Thoreau’s experiment in simple living on the northern shore of Walden Pond in eastern Massachusetts (1845–47). Walden is viewed not only as a philosophical treatise on labour, leisure, self-reliance, and individualism but also as an influential piece of nature writing. It is considered Thoreau’s masterwork.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
